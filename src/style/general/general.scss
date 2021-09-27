@@ -1,0 +1,66 @@
+@import "../colors/colors.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  user-select: none;
+  color: #fff;
+  filter: drop-shadow(0 0 2px #000);
+}
+
+span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: $light_blue_color;
+  filter: drop-shadow(0 0 2px #000);
+}
+.container,
+.container_current {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 80%;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 14px 4px $shadow_white;
+  margin: 0.75rem auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container_current,
+.container_days,
+.container_hours {
+  padding: 1rem;
+}
+
+.container_days,
+.container_hours {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}

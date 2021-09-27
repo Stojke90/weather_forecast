@@ -1,0 +1,11 @@
+@import "../colors/colors.scss";
+
+.container_hours {
+  width: 100%;
+  border-top: solid 1px $grey_color;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}

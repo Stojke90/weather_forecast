@@ -1,0 +1,30 @@
+@import "../colors/colors.scss";
+
+.container_days {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  .weather_by_day {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    div > img {
+      width: 45%;
+    }
+
+    .day_of_week {
+      width: 30%;
+      text-align: left;
+    }
+
+    .img_day_of_week,
+    .temp_day_of_week {
+      width: 35%;
+      text-align: center;
+    }
+  }
+}

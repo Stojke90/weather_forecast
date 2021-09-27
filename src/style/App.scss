@@ -1,0 +1,89 @@
+/* app */
+@import "./general/general.scss";
+@import "./colors/colors.scss";
+/* start css style for Current component */
+@import "./current/current.scss";
+/* end css style for Current component */
+/* start css style for Days component */
+@import "./days/days.scss";
+/* end css style for Days component */
+/* start css style for ByHour component */
+@import "./hours/hours.scss";
+/* end css style for ByHour component */
+
+// responsive
+
+@media all and (max-width: 1075px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 940px) {
+  .container {
+    width: 95%;
+  }
+  p,
+  span {
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 769px) {
+  .container_current,
+  .container_days {
+    width: 100%;
+  }
+  .container_days {
+    backdrop-filter: blur(0px);
+    padding: 2rem;
+    border-top: solid 1px #808080;
+  }
+  .container_current {
+    border: none;
+  }
+
+  .weather_by_day p,
+  .weather_by_day span {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .container_current .left,
+  .container_current .right {
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .curr_data {
+    text-align: center;
+  }
+
+  .right {
+    margin-top: 2rem;
+  }
+
+  .swiper-wrapper > div > img {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 345px) {
+  p,
+  span {
+    font-size: 0.7rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem !important;
+  }
+}

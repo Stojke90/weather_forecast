@@ -1,0 +1,85 @@
+@import "../colors/colors.scss";
+
+.container_current {
+  width: 70%;
+  border-right: solid 1px $grey_color;
+
+  .left {
+    width: 40%;
+
+    .upper_left > h2 {
+      margin-bottom: 4rem;
+
+      .curr_data {
+        width: 40%;
+        text-align: center;
+      }
+    }
+
+    .lower_left {
+      margin-top: 4rem;
+    }
+  }
+  .right {
+    width: 60%;
+
+    .search_city {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+
+      input {
+        width: 60%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: solid 2.5px $grey_color;
+
+        color: $light_blue_color;
+        border-radius: 1rem;
+
+        &:hover {
+          border-bottom: solid 2.5px $light_blue_color;
+        }
+        &:focus {
+          border-bottom: solid 2.5px $light_blue_color;
+          text-indent: 0.5rem;
+        }
+        &::placeholder {
+          color: $light_blue_color;
+          font-size: 1rem;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+
+      .search_btn {
+        background-color: transparent;
+        cursor: pointer;
+        border-style: none;
+
+        img {
+          width: 70%;
+
+          &:hover {
+            filter: drop-shadow(0 0 6px $grey_color);
+          }
+        }
+      }
+    }
+
+    .current_con_text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 4rem;
+
+      .current_text {
+        width: 45%;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

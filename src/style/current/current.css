@@ -1,0 +1,123 @@
+.container_current {
+  width: 70%;
+  border-right: solid 1px #808080;
+}
+
+.container_current .left {
+  width: 40%;
+}
+
+.container_current .left .upper_left > h2 {
+  margin-bottom: 4rem;
+}
+
+.container_current .left .upper_left > h2 .curr_data {
+  width: 40%;
+  text-align: center;
+}
+
+.container_current .left .lower_left {
+  margin-top: 4rem;
+}
+
+.container_current .right {
+  width: 60%;
+}
+
+.container_current .right .search_city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_current .right .search_city input {
+  width: 60%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 2.5px #808080;
+  color: #00bfff;
+  border-radius: 1rem;
+}
+
+.container_current .right .search_city input:hover {
+  border-bottom: solid 2.5px #00bfff;
+}
+
+.container_current .right .search_city input:focus {
+  border-bottom: solid 2.5px #00bfff;
+  text-indent: 0.5rem;
+}
+
+.container_current .right .search_city input::-webkit-input-placeholder {
+  color: #00bfff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container_current .right .search_city input:-ms-input-placeholder {
+  color: #00bfff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container_current .right .search_city input::-ms-input-placeholder {
+  color: #00bfff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container_current .right .search_city input::placeholder {
+  color: #00bfff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container_current .right .search_city .search_btn {
+  background-color: transparent;
+  cursor: pointer;
+  border-style: none;
+}
+
+.container_current .right .search_city .search_btn img {
+  width: 70%;
+}
+
+.container_current .right .search_city .search_btn img:hover {
+  -webkit-filter: drop-shadow(0 0 6px #808080);
+          filter: drop-shadow(0 0 6px #808080);
+}
+
+.container_current .right .current_con_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.container_current .right .current_con_text .current_text {
+  width: 45%;
+  padding: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=current.css.map */
