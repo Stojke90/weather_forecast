@@ -81,7 +81,7 @@ const App = () => {
           callLeft.status === 200 && console.log(callLeft.data.calls_remaining);
         })
       )
-      .catch((err) => alert(err.message));
+      .catch((err) => alert("Api key has expired, please contact me!!!"));
     city !== "" && setCity("");
   };
 
